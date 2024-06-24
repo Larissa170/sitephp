@@ -143,7 +143,7 @@ body {
 #form {
   border: 0px solid blue;
   width: 500px;
-  min-height: 230px;
+  min-height: 240px;
   margin: 15% auto;
   overflow: hidden;
   background-color: #fac;
@@ -152,10 +152,10 @@ body {
 #form a {
   float: left;
   position: absolute;
-  left: 5%;
+  right: 5%;
   bottom: 10px;
   text-decoration: none;
-  color: #555;
+  color: #444;
 }
 #form a:hover {
   color: #6af;
@@ -170,4 +170,8 @@ body {
 label {
   float: left;
   margin: 1% 5%;
+}
+.bt_form {
+  padding: 5px 10px;
+  margin-bottom: 5px;
 }
