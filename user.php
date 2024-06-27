@@ -1,3 +1,6 @@
+<?php 
+include "verifica_login.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 </head>
 <body>
   <section id="principal">
-    <section id="topo">
+    <section id="topo" style="background-image:url(<?php echo "users/$email_logado/$capa_logado"?>);background-size:cover;">
       <?php include "topo.php"; ?>
     </section>
     <section id="conteudo">

@@ -1,3 +1,10 @@
+<?php 
+include "connect.php";
+SESSION_START();
+if(isset($_SESSION['login_user']) && isset($_SESSION['senha_user'])){
+  header("location:user.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
