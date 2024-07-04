@@ -139,8 +139,19 @@ body {
   min-height: 300px;
   float: left;
 }
-h1 {
+h1,
+.dados {
   margin-left: 20px;
+}
+.titulo_post,
+.titulo_perfil {
+  text-align: center;
+  margin: 25px 0;
+  font-size: large;
+  font-weight: bold;
+}
+.posts {
+  margin: 5px 20px;
 }
 /*formulario pagina index*/
 #form {

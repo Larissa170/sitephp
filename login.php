@@ -1,16 +1,10 @@
 <?php 
 include "connect.php";
 
-SESSION_START();
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 
-$_SESSION['login_user'] = $login;
-$_SESSION['senha_user'] = $senha;
-
-if(isset($_SESSION['login_user']) 
-  && isset($_SESSION['senha_user'])
-){
+if(isset($login)&& isset($senha)){
   //verifica os dados no banco
   $select = "select * from tb_user where email = '$login'";
   $sql = mysqli_query($link,$select);
@@ -18,7 +12,11 @@ if(isset($_SESSION['login_user'])
     $email= $dados['email'];
     $pass = $dados['senha'];
   }  
+  
   if($login == $email && $senha == $pass){
+    SESSION_START();
+    $_SESSION['login_user'] = $login;
+    $_SESSION['senha_user'] = $senha;
     header('location:user.php');
   } else {
     header('location:index.php');

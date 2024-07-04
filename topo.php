@@ -16,8 +16,9 @@
   </ul>
 </nav>
 <section id="menu_perfil">
-  <a href="index.php?page=1"> Sobre </a>
-  <a href="index.php?page=2"> Atividades </a>
+  <a href="user.php?page=1"> Sobre </a>
+  <a href="user.php?page=2"> Atividades </a>
+  <a href="user.php?page=3"> Nova Postagem </a>
   <a href="logout.php">Sair</a>
 </section>
 
